@@ -8,6 +8,7 @@ import me.skymc.taboolib.demo.display.DisplayDemo;
 import me.skymc.taboolib.demo.message.ChatCatcherDemo;
 import me.skymc.taboolib.demo.player.ItemTakeDemo;
 import me.skymc.taboolib.demo.player.listener.ListenerPlayerJump;
+import me.skymc.taboolib.demo.sound.SoundPackDemo;
 import me.skymc.taboolib.string.Language;
 
 public class TabooLibDemo extends JavaPlugin {
@@ -43,6 +44,12 @@ public class TabooLibDemo extends JavaPlugin {
 		Bukkit.getPluginManager().registerEvents(new ChatCatcherDemo(), this);
 		Bukkit.getPluginManager().registerEvents(new ItemTakeDemo(), this);
 		Bukkit.getPluginManager().registerEvents(new ListenerPlayerJump(), this);
+		
+		/**
+		 * 注册指令
+		 */
+		Bukkit.getPluginCommand("soundtest").setExecutor(new SoundPackDemo());
+		Bukkit.getPluginCommand("soundtest").setTabCompleter(new SoundPackDemo());
 		
 		/**
 		 * 载入提示

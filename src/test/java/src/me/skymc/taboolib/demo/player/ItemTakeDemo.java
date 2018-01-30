@@ -14,7 +14,7 @@ public class ItemTakeDemo implements Listener {
 	
 	@EventHandler
 	public void onCommand(PlayerCommandPreprocessEvent e) {
-		if (!e.getMessage().equals("/glow")) {
+		if (e.getMessage().equals("/glow")) {
 			e.setCancelled(true);
 			/**
 			 * 检查玩家是否正在高亮状态
