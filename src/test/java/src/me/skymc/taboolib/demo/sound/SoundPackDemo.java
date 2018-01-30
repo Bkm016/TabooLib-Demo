@@ -28,7 +28,14 @@ public class SoundPackDemo implements CommandExecutor, TabCompleter {
 			return false;
 		}
 		
-		new SoundPack(args[0]).play((Player) sender);;
+		/**
+		 * SoundPack 工具允许 低版本（1.9-）的服务器使用 高版本（1.9+） 的音效名称
+		 * 
+		 * 例如：BLOCK_ANVIL_USE
+		 * 
+		 * new SoundPack("BLOCK_ANVIL_USE-1-1").play((Player) sender);
+		 */
+		new SoundPack(args[0]).play((Player) sender);
 		return true;
 	}
 
