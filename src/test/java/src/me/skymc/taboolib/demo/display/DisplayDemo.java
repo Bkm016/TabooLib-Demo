@@ -1,4 +1,4 @@
-package me.skymc.taboolib.demo;
+package me.skymc.taboolib.demo.display;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -14,16 +14,16 @@ public class DisplayDemo implements Listener {
 	@EventHandler
 	public void onCommand(PlayerJoinEvent e) {
 		/**
-		 * å‘ç©å®¶å‘é€å¤§æ ‡é¢˜
+		 * ÏòÍæ¼Ò·¢ËÍ´ó±êÌâ
 		 */
-		TitleUtils.sendTitle(e.getPlayer(), "æ¬¢è¿!", 10, 100, 10, "æ¬¢è¿æ¥åˆ°è¿™ä¸ªæœåŠ¡å™¨!", 10, 100, 10);
+		TitleUtils.sendTitle(e.getPlayer(), "»¶Ó­!", 10, 100, 10, "»¶Ó­À´µ½Õâ¸ö·şÎñÆ÷!", 10, 100, 10);
 		
 		/**
-		 * å‘å…¶ä»–ç©å®¶å‘é€å°æ ‡é¢˜
+		 * ÏòÆäËûÍæ¼Ò·¢ËÍĞ¡±êÌâ
 		 */
 		for (Player player : Bukkit.getOnlinePlayers()) {
 			if (!player.equals(e.getPlayer())) {
-				ActionUtils.send(player, "ç©å®¶ " + e.getPlayer().getName() + " åŠ å…¥æœåŠ¡å™¨");
+				ActionUtils.send(player, "Íæ¼Ò " + e.getPlayer().getName() + " ¼ÓÈë·şÎñÆ÷");
 			}
 		}
 	}

@@ -1,0 +1,6 @@
+name: TabooLibDemo
+main: me.skymc.taboolib.demo.TabooLibDemo
+version: {$VERSION}
+
+author: [坏黑]
+depend: [TabooLIb]

@@ -1,4 +1,4 @@
-package me.skymc.taboolib.demo;
+package me.skymc.taboolib.demo.message;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -14,7 +14,7 @@ public class ChatCatcherDemo implements Listener {
 	@EventHandler
 	public void onCommand(PlayerCommandPreprocessEvent e) {
 		/**
-		 * 如果玩家输入指令 /tpa
+		 * 如果玩家输入指令 /tp
 		 */
 		if (e.getMessage().equals("/tp")) {
 			e.setCancelled(true);
