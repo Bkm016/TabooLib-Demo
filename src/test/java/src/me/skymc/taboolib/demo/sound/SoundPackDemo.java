@@ -29,9 +29,9 @@ public class SoundPackDemo implements CommandExecutor, TabCompleter {
 		}
 		
 		/**
-		 * SoundPack å·¥å…·å…è®¸ ä½ç‰ˆæœ¬ï¼ˆ1.9-ï¼‰çš„æœåŠ¡å™¨ä½¿ç”¨ é«˜ç‰ˆæœ¬ï¼ˆ1.9+ï¼‰ çš„éŸ³æ•ˆåç§°
+		 * SoundPack ¹¤¾ßÔÊĞí µÍ°æ±¾£¨1.9-£©µÄ·şÎñÆ÷Ê¹ÓÃ ¸ß°æ±¾£¨1.9+£© µÄÒôĞ§Ãû³Æ
 		 * 
-		 * ä¾‹å¦‚ï¼šBLOCK_ANVIL_USE
+		 * ÀıÈç£ºBLOCK_ANVIL_USE
 		 * 
 		 * new SoundPack("BLOCK_ANVIL_USE-1-1").play((Player) sender);
 		 */
