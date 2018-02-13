@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import me.skymc.taboolib.demo.cooldown.CooldownPackDemo;
 import me.skymc.taboolib.demo.display.DisplayDemo;
+import me.skymc.taboolib.demo.language2.Language2Demo;
 import me.skymc.taboolib.demo.message.ChatCatcherDemo;
 import me.skymc.taboolib.demo.player.ItemTakeDemo;
 import me.skymc.taboolib.demo.player.listener.ListenerPlayerJump;
@@ -49,7 +50,7 @@ public class TabooLibDemo extends JavaPlugin {
 		Bukkit.getPluginManager().registerEvents(new ListenerPlayerJump(), this);
 		Bukkit.getPluginManager().registerEvents(new CooldownPackDemo(), this);
 		Bukkit.getPluginManager().registerEvents(new ThreadUtilsDemo(), this);
-
+		Bukkit.getPluginManager().registerEvents(new Language2Demo(), this);
 		
 		/**
 		 * ×¢²áÖ¸Áî
